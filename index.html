@@ -1,0 +1,321 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Diamond Peak Hotel</title>
+  <link rel="icon" href="img/logo 02.png">
+  <!--Link to the styles.css sheet-->
+  <link rel="stylesheet" href="styles.css">
+  <!--Adding Google Fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=PT+Sans:ital@0;1&family=Poppins:wght@300;400;500;600;700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body> <!--Home page - start-->
+
+    <!--Logo-->
+
+ <div id="wrap"> 
+  <nav>
+    <div class="logo">
+      <img src="img/logo 02.png" alt="logo">
+    </div>
+    
+    <!--Logo End-->
+
+    <!--Hamburger button-->
+
+    <button type="button" class="btn-hamburger" data-action="nav-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button> 
+
+    <!--Hamburger button - End-->
+
+    <!--Navigation Bar-->
+
+    <ul class="nav-menu">
+      <li class="nav-item"><a href="index.html">Home</a></li>
+      <li class="nav-item"><a href="branches.html">Branches</a></li>
+      <li class="nav-item dropdown">
+        <a href="restaurent.html" data-action="dropdown-toggle">Restaurants</a>
+      </li>
+      <li class="nav-item"><a href="Adventure.html">Adventures</a></li>
+      <li class="nav-item"><a href="Booking.html">BOOK NOW</a></li>   
+    </ul>
+  </nav>
+
+  <!--Navigation Bar - End-->
+  
+<div class="container">
+  <section class="text-box">
+    <p>Welcome to the </p>
+    <h1>Diamond Peak Hotels</h1>     
+ </section> 
+</div>
+
+ <!--Java Script for Hamburger button-->
+
+<script>
+
+  let nav = document.querySelector('nav');
+  let navToggle = nav.querySelector("[data-action='nav-toggle']");
+
+  navToggle.addEventListener('click', () => {
+    if (nav.classList.contains('opened')) {
+      nav.classList.remove('opened');
+    } else {
+      nav.classList.add('opened');
+    }
+  })
+    
+</script>
+
+<!--End of Java Script-->
+
+<!--Hotel overveiw -->
+
+<section class="flex-1">
+ <section class="heading">
+  <h1>HOTEL OVERVEIW</h1>
+  <P> Unveiling Our Hotel's Rich Legacy and Vision </P>
+ </section>
+
+  <section class="container-one">
+   <section class="about">
+    <section class="about-image">
+      <img src="img/pexels-quang-nguyen-vinh-14036250 (1).webp" alt="main_img">
+    </section>
+     <section class="about-content">
+      <h2>UNCOMPROMISING EXCELLENCE ...</h2>
+      <p>In the heart of Colombo, nestled between Galle Face Green and the city’s busiest hub, the World Trade Centre, 
+         Diamond Peak, Colombo celebrates meticulous service through luxury experiences. Centrally located for shopping,
+         entertainment, and business, the hotel presents the finest accommodation, signature dining experiences, 
+         and world-class meeting and banqueting facilities as one of the most preferred Colombo hotels.
+      </p>
+      <li>450 rooms, suites and apartments</li>
+      <li>exciting new dining and social scene and the largest and extensive hotel  facilities.</li>      
+     </section>
+  </section>
+ </section>
+
+<!--End Hotel Overveiw-->
+
+<!--Our Amenities-->
+
+<section class="container-two">
+  <h1>HOTEL AMENITIES</h1>
+  <p>Hotel amenities refer to the services and facilities provided to guests during their stay. These can include essentials like comfortable rooms, housekeeping, and Wi-Fi, as well as luxuries like pools, spas, fitness centers, and dining options. These offerings enhance the overall guest experience, ensuring a comfortable and enjoyable stay.</p>
+  <section class="row">
+    
+    <section class="service">     
+      <i class='bx bx-water'></i>
+      <img src="img/pexels-andrea-piacquadio-3771835 (1).webp" alt="service1">
+      <h2> 01 . SWIMMING POOL</h2>
+      <p>"Immerse yourself in luxury at our pool, a tranquil haven designed for ultimate relaxation and invigoration amidst stunning surroundings."</p>  
+    </section>
+
+    <section class="service">
+      <i class='bx bx-dumbbell'></i>
+      <img src="img/pexels-william-choquette-1954524.webp" alt="service2">
+      <h2>02 . GYM</h2>
+      <p>"Elevate fitness at our well-equipped hotel gym. Discover state-of-the-art facilities for an invigorating workout experience."</p>
+    </section>
+
+    <section class="service">
+      <i class='bx bxs-spa'></i>
+      <img src="img/pexels-cojanu-alexandru-16134464.webp" alt="service3">
+      <h2>03 . SPA</h2>
+      <p>"Indulge in pure relaxation at our serene hotel spa. Rejuvenate mind and body with soothing treatments and tranquil ambiance."</p>
+    </section>
+
+    <section class="service">
+      <i class='bx bx-restaurant'></i>
+      <img src="img/pexels-marcus-herzberg-1058277.webp" alt="service4">
+      <h2>04 . RESTAURENTS</h2>
+      <p>"Indulge in exquisite dining at our hotel's restaurants  a fusion of flavors, impeccable service, and a delightful ambiance." </p>
+    </section>
+
+    <section class="service">
+      <i class='bx bx-wifi'></i>
+      <img src="img/pexels-vlada-karpovich-4050290.webp" alt="service5">
+      <h2>05 . NETWORK & CONNECTIVITY</h2>
+      <p>"Hotel network provides Wi-Fi access, ensuring guests stay connected. Reliable connectivity enhances guest experience and supports business travelers."</p>
+    </section>
+    
+    <section class="service">
+      <i class='bx bxs-parking'></i>
+      <img src="img/pexels-erik-mclean-4501407.webp" alt="service6">
+      <h2>06 . PARKING</h2>
+      <p>"Hotel parking provides convenient vehicle storage for guests, ensuring security and accessibility during their stay. Additional fees may apply."</p>
+    </section>
+
+    <section class="service">
+      <i class='bx bxl-deezer'></i>
+      <img src="img/pexels-teddy-yang-2263436.webp" alt="service7">
+      <h2>07 . ENTERTAINMENT</h2>
+      <p>"Providing entertainment options such as in-room movies, cable TV, and sometimes live music or events."</p>
+    </section>
+
+    <section class="service">
+      <i class='bx bx-child'></i>
+      <img src="img/pexels-vlada-karpovich-7356474 (1).webp" alt="service8">
+      <h2>08 . CHILDCARE SERVICE</h2>
+      <p>"Some hotels offer childcare or babysitting services to assist families traveling with children."</p>
+    </section>
+  </section>
+</section>
+<!--End Our Amenities-->
+
+<!--Hotel Room Types-->
+
+<section class="rooms">
+  <div class="row">
+    <div class="col content-col">
+      <h1>HOTEL ROOM TYPES</h1>
+      <p>Hotel rooms offer comfortable accommodations for travelers,
+         equipped with essential amenities such as beds, bathrooms,
+          and furnishings. They provide a cozy retreat,
+           whether for leisure or business, 
+        and range from standard to luxurious options, catering to diverse preferences and budgets.
+      </p>
+      <ol>
+        <strong>
+        <li>Deluxe Ocean View Room</li>
+        <li>Diamond Suite</li>
+        <li>One Bedroom Apartment</li>
+        <li>Diamond Deluxe Ocean view Room</li>
+        </strong>
+        
+    </div>
+    
+    <div class="col image-col">
+      <div class="image-gallery">
+        <img src="img/pexels-pixabay-164595.webp" alt="room1">
+        <img src="img/pexels-engin-akyurt-3688261.webp" alt="room2">
+        <img src="img/pexels-cottonbro-studio-6466482.webp" alt="room3">
+        <img src="img/pexels-max-rahubovskiy-6587825.webp" alt="room4">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- End Hotel Room Types-->
+
+<!--Our Team-->
+
+<section class="container-three">
+  <section class="heading">
+    <h1>OUR EXECUTIVE TEAM</h1>
+    
+    <P> Unveiling Our Hotel's Rich Legacy and Vision </P>
+   </section>
+    
+   <div class="proiles">
+
+    <div class="profile">
+      <img src="img/me (1).png" class="profile-img">
+      <h3 class="user-name"> Dushan Alwis</h3>
+      <h5>Director</h5>
+      <p>A hotel director is a top executive responsible for overseeing all aspects of a hotel's operations, ensuring guest satisfaction, and achieving financial goals.</p>
+    </div>
+
+    <div class="profile">
+      <img src="img/me (2).png" class="profile-img">
+      <h3 class="user-name">Alex Chamara</h3>
+      <h5>General Manager</h5>
+      <p>A hotel general manager is responsible for overseeing all aspects of a hotel's operations, ensuring guest satisfaction, and managing staff.</p>
+    </div>
+
+    <div class="profile">
+      <img src="img/me (4).png" class="profile-img">
+      <h3 class="user-name">Poojana Suchith</h3>
+      <h5>Director of Finance</h5>
+      <p>The Director of Finance in a hotel oversees financial operations, budgeting, and financial reporting to ensure efficient financial management and profitability within the hospitality industry.</p>
+    </div>
+
+    <div class="profile">
+      <img src="img/me (3).png" class="profile-img">
+      <h3 class="user-name">Dinuka Chanaka </h3>
+      <h5>Director of Food and Beverage (F&B)</h5>
+      <p>The Director of Food and Beverage at a hotel oversees dining operations, menu planning, and guest experiences, ensuring exceptional culinary services.</p>
+    </div>
+
+   </div>
+
+</section>
+
+<!--End Our Team-->
+
+<!--Footer-->
+
+
+<section class="footer-distributed">
+  <section class="footer-left">
+    <img src="img/logo 02.png" alt="logo">
+
+    <p class="footer-links">
+      <a href="Home.html">Home</a>
+      |
+      <a href="branches.html">Branches</a>
+      |
+      <a href="#">Restaurants</a>
+      |
+      <a href="Adventure.html">Adventures</a>
+    </p>
+
+    <p class="footer-company-name">Copyright 2023 <strong>DiomandPeakHotels</strong> All rights reserved</p>
+  </section>  
+
+  <section class="footer-center">
+
+    <section>
+      <i class='bx bx-map'></i>
+      <p><span>Sri Lanka</span> Colombo</p>
+    </section>
+
+    <section>
+      <i class='bx bx-mobile'></i>
+      <p>+94 776465906</p>
+    </section>
+
+    <section>
+      <i class='bx bx-envelope'></i>
+      <p>kddalwis@gmail.com</p>
+    </section>
+
+  </section>
+
+  <section class="footer-right">
+    <p class="footer-company-about">
+      <span>About the Hotel</span><br>
+      <strong>Diomand Peak</strong> Luxuary hotel in Sri lanka.
+    </p>   
+
+    <section class="footer-icons">
+      <a href="#"><i class='bx bxl-facebook'></i></a>
+      <a href="#"><i class='bx bxl-twitter' ></i></a>
+      <a href="#"><i class='bx bxl-youtube' ></i></a>
+      <a href="#"><i class='bx bxl-instagram' ></i></a>
+    </section>
+  </section>
+
+</section>
+  
+<!--End Footer-->
+
+</section>
+
+ </div>
+
+</body> <!--Home page - End-->
+</html>

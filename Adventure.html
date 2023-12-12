@@ -1,0 +1,266 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adventure | Diamond Peak Hotel</title>
+  <link rel="icon" href="img/logo 02.png">
+  <!--Link to the styles.css sheet-->
+  <link rel="stylesheet" href="styles.css">
+  <!--Adding Google Fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=PT+Sans:ital@0;1&family=Poppins:wght@300;400;500;600;700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body> <!--Home page - start-->
+
+    <!--Logo-->
+
+ <div id="wrap"> 
+  <nav>
+    <div class="logo">
+      <img src="img/logo 02.png" alt="">
+    </div> 
+    
+    <!--Logo End-->
+
+    <!--Hamburger button-->
+
+    <button type="button" class="btn-hamburger" data-action="nav-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!--Hamburger button - End-->
+
+    <!--Navigation Bar-->
+
+    <ul class="nav-menu">
+      <li class="nav-item"><a href="index.html">Home</a></li>
+      <li class="nav-item"><a href="branches.html">Branches</a></li>
+      <li class="nav-item dropdown">
+        <a href="restaurent.html" data-action="dropdown-toggle">Restaurants</a>
+      <li class="nav-item"><a href="Adventure.html">Adventures</a></li>
+      <li class="nav-item"><a href="Booking.html">BOOK NOW</a></li>   
+    </ul>
+  </nav>
+
+    <!--Navigation Bar - End-->
+  
+<div class="container-five">
+  
+  <section class="text-box1">
+    <h1>Adventure Activities</h1>  
+    <p>Adventure activities provide thrilling experiences, from hiking rugged trails to whitewater rafting.<br> They offer adrenaline rushes and opportunities to explore nature's beauty while pushing personal boundaries.</p>
+ </section> 
+</div>
+
+ <!--Java Script for Hamburger button-->
+
+<script>
+
+  let nav = document.querySelector('nav');
+  let navToggle = nav.querySelector("[data-action='nav-toggle']");
+
+  navToggle.addEventListener('click', () => {
+    if (nav.classList.contains('opened')) {
+      nav.classList.remove('opened');
+    } else {
+      nav.classList.add('opened');
+    }
+  })
+    
+</script>
+
+<!--End of Java Script-->
+
+<!--Adventure Activities-->
+
+<section class="flex-2">
+
+  <!--Adventure 01-->
+
+  <section class="heading">
+   <h1>Island Scuba- Colombo</h1>
+   <P> For a memorable diving session in the Indian Ocean </P>
+  </section>
+
+  <section class="adventure">
+    <div class="row">
+
+       <div class="adventure-left">
+        <img src="img/pexels-richard-segal-1645028.webp" alt="">
+       </div>
+
+       <div class="adventure-middle">
+        <h1>INFORMATION ...</h1>
+        <p>Dive deep into the waters in Colombo, Coastal part of Colombo is perfect for some Sri Lanka adventure activities. It happens to be the best place for you top sharpen your underwater skills. You can go for a diving course that will give you six dives over the course of five says and you can avail it from the PADI certified experts. The necessary diving gears will all be provided at the diving course location.</p>
+        <a href="" class="btn">BOOK NOW</a>
+       </div>
+
+       <div class="adventure-right">
+        <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126761.69314241645!2d79.77706554311894!3d6.854249000000014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25b1756949f3b%3A0xa851c4b5f3baabcb!2sIsland%20Scuba%20-%20Scuba%20Diving%20In%20Sri%20Lanka!5e0!3m2!1sen!2slk!4v1693706229910!5m2!1sen!2slk" width="445" height="440" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+       </div>
+    </div>
+  </section>
+
+  <!--End Adventure 01-->
+
+  <!-- Adventure 02-->
+  
+  <section class="heading">
+    <h1>Zoo and Botanical Garden - Budapest</h1>
+    <P>  </P>
+   </section>
+
+  <section class="adventure">
+    <div class="row">
+
+       <div class="adventure-left">
+        <img src="img/nikolay-tchaouchev-ttpNCevA1tA-unsplash.webp" alt="">
+       </div>
+
+       <div class="adventure-middle">
+        <h1>INFORMATION ...</h1>
+        <p>Spread across 4.5 hectares (11 acres), the Budapest Zoo and Botanical Garden is one of the oldest zoos in the world. Traces of the park’s over 150-year history can be found in its historic architecture, statues and even long-standing animal and plant residents. A relaxed stroll anywhere in the garden allows visitors to have up-close experiences with countless species of flora and fauna from across the globe. </p>
+        <a href="" class="btn">BOOK NOW</a>
+       </div>
+
+       <div class="adventure-right">
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21551.65877359761!2d19.02245744471076!3d47.529693405674024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741db8896028bc7%3A0xaf07c6529c6becf2!2sBudapest%20Zoo%20%26%20Botanical%20Garden!5e0!3m2!1sen!2slk!4v1693711690022!5m2!1sen!2slk" width="445" height="440" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+       </div>
+    </div>
+  </section>
+
+  <!--End Adventure 02-->
+
+  <!-- Adventure 03-->
+
+  <section class="heading">
+    <h1>Carve Down Runs - California</h1>
+    <P> We determine if crave.ca is down by performing a server check from our servers.</P>
+   </section>
+
+  <section class="adventure">
+    <div class="row">
+
+       <div class="adventure-left">
+        <img src="img/pexels-daniel-frank-352091.webp" alt="">
+       </div>
+
+       <div class="adventure-middle">
+        <h1>INFORMATION ...</h1>
+       <p>With chairlifts only 280 steps from the water’s edge, Homewood Ski Resort seems to rise straight out of Lake Tahoe’s western shore. As you rip down Rainbow Ridge Run’s gentle curves, it's easy to imagine swan-diving into the indigo depths. Heavenly Ski Resort offers a different perspective on that dazzling blue lake—22 miles south to north—on Ridge Run’s swooping intermediate cruise. But for a peak-to-peak panorama, no place beats Mammoth Mountain. </p>
+        <a href="" class="btn">BOOK NOW</a>
+       </div>
+
+       <div class="adventure-right">
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d568804.0793362827!2d-119.56983844664157!3d37.169721377825695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dd217b07dd1afd%3A0xe6b6c52834f90678!2sCrave%20to%20Create!5e0!3m2!1sen!2slk!4v1693713227571!5m2!1sen!2slk" width="445" height="440" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+       </div>
+    </div>
+  </section>
+
+  <!--End Adventure 03-->
+
+  <!--Footer-->
+
+<section class="footer-distributed">
+  <section class="footer-left">
+    <img src="img/logo 02.png" alt="">
+
+    <p class="footer-links">
+      <a href="Home.html">Home</a>
+      |
+      <a href="branches.html">Branches</a>
+      |
+      <a href="#">Restaurants</a>
+      |
+      <a href="#">Adventures</a>
+    </p>
+
+    <p class="footer-company-name">Copyright 2023 <strong>DiomandPeakHotels</strong> All rights reserved</p>
+  </section>  
+
+  <section class="footer-center">
+
+    <section>
+      <i class='bx bx-map'></i>
+      <p><span>Sri Lanka</span> Colombo</p>
+    </section>
+
+    <section>
+      <i class='bx bx-mobile'></i>
+      <p>+94 776465906</p>
+    </section>
+
+    <section>
+      <i class='bx bx-envelope'></i>
+      <p>kddalwis@gmail.com</p>
+    </section>
+
+  </section>
+
+  <section class="footer-right">
+    <p class="footer-company-about">
+      <span>About the Hotel</span><br>
+      <strong>Diomand Peak</strong> Luxuary hotel in Sri lanka.
+    </p>   
+
+    <section class="footer-icons">
+      <a href="#"><i class='bx bxl-facebook'></i></a>
+      <a href="#"><i class='bx bxl-twitter' ></i></a>
+      <a href="#"><i class='bx bxl-youtube' ></i></a>
+      <a href="#"><i class='bx bxl-instagram' ></i></a>
+    </section>
+  </section>
+
+</section>
+  
+<!--End Footer-->
+
+</section>
+
+ </div>
+
+</body> <!--Adventure page - End-->
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

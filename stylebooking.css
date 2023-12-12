@@ -1,0 +1,574 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Montserrat:wght@300;400;500&family=PT+Sans:ital@0;1&family=Poppins:wght@300;400;500;600;700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* Book Now page */
+
+.container {
+  position: relative;
+  margin-top: 0px;
+  min-height: 100%;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(3, 3, 3, 0.056), rgba(0, 0, 0, 0.350)),  url(img/pexels-quang-nguyen-vinh-14036250\ \(1\).webp);
+  background-size: cover;
+  background-position: center;
+}
+
+/* Navigation bar */
+
+nav {
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 90px;
+  padding: 0 1.8rem;
+  background-color: rgba(3, 3, 3, 0.886);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 45px;
+}
+
+nav .logo img {
+  width: 94px;
+  
+}
+
+nav .nav-menu {
+  position: absolute;
+  right: 1.5rem;
+  top: 10px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+nav .nav-menu .a{
+  color: rgb(255, 255, 255);
+}
+
+nav .nav-menu .nav-item a:hover{
+  color: #c3af58;
+}
+
+nav .nav-item {
+  display: inline-block;
+}
+
+
+nav .nav-item > a {
+  display: inline-block;
+  color: #f7f3f3;
+  text-decoration: none;
+  padding:  1.5rem;
+  font-size: 18px;
+  /* margin-top: ; */
+}
+
+nav .dropdown {
+  position: relative;
+}
+
+nav .dropdown a::after {
+  
+  display: inline-block;
+  margin-left: .5em;
+  vertical-align: middle;
+  border-top: .3em solid #fff;
+  border-right: .3em solid transparent;
+  border-left: .3em solid transparent;
+}
+
+nav .dropdown.show a::after{
+  transform: rotate(180deg);
+}
+
+nav .dropdown-menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  margin-top: .01em;
+  padding: .5em 0;
+  border: 4.5px solid rgba(0, 0, 0, 0.514);
+  border-radius: .2em;
+  background-color: #fff;
+}
+
+
+nav .dropdown.show .dropdown-menu{
+  display: none;
+  
+}
+
+nav .dropdown-item {
+  display: block;
+  padding: 0 1.5rem;
+  color: #202123;
+  font-size: 18px;
+  line-height: 2.5;
+  text-decoration: none;
+  transition: all 60s ease;
+}
+
+
+.text-box{
+  width: 100%;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%,-60%);
+  text-align: center;
+  
+}
+.text-box h1{
+  font-size: 65px;
+  font-family: 'Lobster', cursive;
+  color: rgb(247, 247, 246);
+  font-weight: 100;
+  letter-spacing: 9px;
+  background-color: #201b1b25;
+}
+
+.text-box p{
+  margin: 0px 0px -45px 10px;
+  font-size: 45px;
+  font-weight: 600;
+  color: #cecb0e;
+  font-family: 'Dancing Script', cursive;
+  letter-spacing: 10px;
+}
+
+
+.flex-box {
+  width: 100%;
+  position: absolute;
+  top: 82%;
+  left: 50%;
+  transform: translate(-50%,-60%);
+  text-align: center;
+  
+}
+
+.flex-box a{
+  text-decoration: none;
+  text-shadow: #000000;
+  color: #0b0404;
+  font-size: 35px;
+  font-weight: 500;
+  font-family:'Times New Roman', Times, serif;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  padding: 1px 25px;
+}
+
+.flex-box a:hover{
+  text-decoration: none;
+  color: #e1e3de;
+  font-size: 35px;
+  font-weight: 500;
+  background-color: #000000;
+}
+
+.flex-box p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffffe4;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 1px;
+  top: 90%;
+}
+
+
+.flex-1 {
+  background-image: url(img/white-flower-textured-background-design_53876-106131.avif);
+}
+
+.heading {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 0px auto;
+  margin-top: 2%;
+}
+
+.heading h1 {
+  font-size: 50px;
+  color: #000000;
+  margin-bottom: 0px;
+  position: relative;
+  font-weight: 900;
+  letter-spacing: 5px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.heading p {
+  font-size:35px;
+  letter-spacing: 2px;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #1207075a;
+  color: #333;
+}
+
+/* Form container styles */
+.flex-1 {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fffcfc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+/* Section heading styles */
+.heading {
+  background-color: #030503;
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px 5px 0 0;
+}
+
+/* Form styles */
+form {
+  margin-bottom: 30px;
+}
+
+/* Label and input styles */
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
+
+form input[type="text"],
+form input[type="number"],
+form select,
+form input[type="date"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 12px 24px;
+  background-color: #070c07;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+/* Adjustments for specific sections or elements */
+/* You may add more specific styles based on your design requirements */
+
+/* Style for the button */
+.button {
+  display: inline-block;
+  margin: 10px; /* Adjust margin as needed */
+  padding: 8px 16px; /* Adjust padding as needed */
+  background-color: #007bff; /* Change background color */
+  color: #fff; /* Change text color */
+  text-decoration: none;
+  border-radius: 4px;
+  border: 2px solid #007bff; /* Change border color */
+  font-size: 16px; /* Adjust font size as needed */
+}
+
+/* Hover effect */
+.button:hover {
+  background-color: #0056b3; /* Change background color on hover */
+  border-color: #0056b3; /* Change border color on hover */
+  color: #fff; /* Change text color on hover */
+}
+
+
+
+.flex-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 26vh;
+  background-color: #000000e0;
+}
+
+.heading-1 img {
+  width: 124px;
+  margin-bottom: -10px;
+}
+
+.heading-1 {
+  text-align: center;
+  margin-bottom: -0px;
+}
+
+.heading-1 p {
+  font-size: 40px;
+  font-weight: 500;
+  font-family: 'Dancing Script', cursive;
+  color: #fbfafa;
+}
+
+/* Style for the main container */
+main {
+  font-family: Arial, sans-serif;
+  padding: 100px;
+  background-color: #211d06ba;
+}
+
+/* Style for section headings */
+.heading {
+  margin-top: 30px;
+}
+
+.heading p {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* Style for tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+table th{
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #0f0909;
+  color: #fff;
+}
+
+table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #0f0909;
+  color: #fffdfdea;
+}
+
+table th {
+  background-color: #47401014;
+  font-weight: bold;
+}
+
+/* Additional styles for specific elements */
+
+/* Style for loyalty points */
+table:nth-last-of-type(1) td:first-of-type {
+  font-weight: bold;
+}
+
+/* Style for cost-related elements */
+table:nth-last-of-type(1) td:last-of-type {
+  text-align: left;
+  font-weight: bold;
+}
+
+/* You may further customize these styles based on your design preferences */
+
+
+/* Style for the box */
+.line {
+  border: 10px solid #ccc; /* Border color */
+  padding: 10px;
+  width: 195px; /* Adjust width as needed */
+  margin-left:700; /* Adjust margin as needed */
+  border-radius: 10px; /* Rounded corners */
+  background-color: #1a1010; /* Background color */
+  color: #fff;
+}
+
+
+/* Original CSS remains unchanged */
+
+/* Media query for mobile devices */
+@media screen and (max-width: 767px) {
+  .flex-2 {
+    height: auto; /* Adjust height for content */
+  }
+
+  .heading-1 img {
+    width: 80px; /* Adjust image size for smaller screens */
+    margin-bottom: 0; /* Reset margin */
+  }
+
+  .heading-1 {
+    margin-bottom: 0; /* Reset margin */
+  }
+
+  .heading-1 p {
+    font-size: 28px; /* Adjust font size */
+  }
+
+  main {
+    padding: 30px; /* Adjust padding for smaller screens */
+  }
+
+  .line {
+    width: auto; /* Allow width to adjust based on content */
+    margin: 0 auto; /* Center align the box */
+    margin-bottom: 20px; /* Adjust margin as needed */
+    border-radius: 5px; /* Smaller border radius for smaller screens */
+  }
+
+  table th,
+  table td {
+    font-size: 14px; /* Adjust table font size */
+  }
+}
+
+
+
+
+/* Optional:
+
+
+@media (max-width: 768px) {
+  .flex-box {
+      flex: 0 0 calc(100% - 10px); 
+  }
+
+  .flex-box a{
+    font-size: 20px;
+  }
+}
+
+/* hambuger btn */
+
+nav .btn-hamburger {
+  display: none;
+  position: absolute;
+  right: 1.5em;
+  top: 50%;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  outline: none;
+  transform: translateY(-50%);
+}
+
+nav .btn-hamburger span {
+  display: block;
+  width: 30px;
+  height: 4px;
+  background-color: #fff;
+  margin: 6px;
+  border-radius: 2px;
+  transition: .3s ease-in-out;
+}
+
+nav .btn-hamburger span:nth-child(4),
+nav .btn-hamburger span:nth-child(5) {
+  position: absolute;
+  top: 10px;
+  opacity: .5;
+}
+
+nav .btn-hamburger span:nth-child(4) {
+  transform: rotate(45deg) scale(0);
+}
+
+nav .btn-hamburger span:nth-child(5) {
+  transform: rotate(-45deg) scale(0);
+}
+
+nav.opened .btn-hamburger span:nth-child(4) {
+  opacity: 1;
+  transform: rotate(45deg) scale(1);
+}
+
+nav.opened .btn-hamburger span:nth-child(5) {
+  opacity: 1;
+  transform: rotate(-45deg) scale(1);
+}
+
+nav.opened .btn-hamburger span:nth-child(1),
+nav.opened .btn-hamburger span:nth-child(2),
+nav.opened .btn-hamburger span:nth-child(3) {
+  opacity: 0;
+}
+
+/* Mobile responsive */
+
+@media screen and (max-width: 768px) { 
+  nav .nav-menu {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 91px;
+    bottom: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    background-color: #202123;
+    transition: bottom .5s ease-in-out;
+    overflow: hidden;
+  }
+
+  nav .btn-hamburger {
+    display: block;
+  }
+
+  nav.opened .nav-menu {
+    bottom: 0;
+  }
+
+  nav .nav-item > a {
+    display: block;
+  }
+
+  nav .dropdown-menu {
+    position: relative;
+    top: 0;
+    margin: 0 .5em;
+  }
+
+  .text-box h1{
+  font-size: 45px;
+  }
+
+  .text-box p{
+    margin: 0px 0px -0px 10px;
+    font-size: 30px;
+   
+  }
+}
+
+
+
+
+

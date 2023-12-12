@@ -1,0 +1,14 @@
+-enter the details of the guest.
+-Select the Hotel branch.
+-Select the chek-in and check-out date.
+-Select the number of rooms (single,double or triple).
+-Select the number of extra beds.
+-Show the loyality points.
+-input the promo code.
+-Select the number of adults,childern and kids above 5 yrs old.
+-Select the type of adventure.
+-Select the date of adventure.
+-select the number of adults and children of adventure.
+-Select the tour guide type.
+-enter the payment details.
+-If the payment is succesful,enter the book now btn then booking details will show.
